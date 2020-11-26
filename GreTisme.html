@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+<title> GreTisme</title>
+<link href="css/style_2.css" type="text/css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+	<div class="container">
+		<div class="header__inner">
+			<div class="header__logo"> GreTisme</div>
+
+            <nav class="nav">
+			<a href="#news" class="nav__link active">A Propos De Nous</a>
+		
+			<a href="#contact" class="nav__link" onclick="location.reload();">Contact</a>
+			
+			</nav>
+       
+		
+    </div>
+</header>
+
+
+
+
+
+<div class="intro">
+	<div class="container">
+		<div class="intro__inner">
+			<h3 class="intro__suptitle">Site Touristique</h3>
+			<h2 class="intro__title">Bienvenue sur GreTisme</h2>
+			
+			
+		</div>
+		
+
+	</div>
+</div>
+
+<section class="section">
+	<div class="container">
+		<div class="section__header">
+			<h3 class="section__suptitle" id="news">Gre<span class="test">noble</span>T<span class="test">our</span>isme</h3>
+			<h2 class="section__title">A Propos De Nous</h2>
+			<div class="section__text">
+				<h3>Notre Site vous permets visiter le Grenoble et son alentours SELON vos preferences.</h3>
+			</div>
+		</div>
+		 </div>
+		<div class="lesblocks">
+	<div class="about">
+		 <!-- 1-er block -->
+		 <a href="#clicks" onclick="removeElement()">
+			<div class="about__item">
+				<div class="about__img">
+					<img src="images/about/1.jpg" alt="" width="255" height="164">
+				</div>
+				<div class="about__text">Voir les musées et les centres culturels</div>
+	     </a>
+				<p class="blocks">Culturelle</p>
+		   </div>
+		<!--2-eme block-->
+		<a href="#clicks" onclick="removeElement1()">
+			<div class="about__item">
+				<div class="about__img">
+					<img src="images/about/2.jpg" alt="" width="255" height="164">
+				</div>
+				<div class="about__text">Voir les différentes idées de randonnée</div>
+	    </a>
+				<p class="blocks">Randonnée</p>
+			</div>
+		<!--3-eme block-->
+		<a href="#clicks" onclick="removeElement2()">
+			<div class="about__item">
+				<div class="about__img">
+					<img src="images/about/3.jpg" alt="" width="255" height="164">
+				</div>
+				<div class="about__text">Voir les restaurants et les magasins de nourriture locaux</div>
+    	</a>
+				<p class="blocks">Gastronomique</p>
+			</div>
+		<!--4-eme block-->
+		<a href="#clicks" onclick="removeElement3()">
+			<div class="about__item">
+				<div class="about__img">
+					<img src="images/about/4.jpg" alt="" width="255" height="164">
+				</div>
+				<div class="about__text">Voir les bars et les discothèques</div>
+	    </a>
+				<p class="blocks">Soirée</p>
+			</div>
+			<!--5-eme block-->
+		<a href="#clicks" onclick="removeElement4()">
+			<div class="about__item">
+				<div class="about__img">
+					<img src="images/about/5.jpg" alt="" width="255" height="164">
+				</div>
+				<div class="about__text">Voir les différentes activités comme laserGame, patinoire, bowling, les Hotels etc.</div>
+	     </a>
+				<p class="blocks">Loisirs</p>
+				</div>
+		
+		</div>
+		<a href="#clicks"> <button onclick="resetElement()" id="retablir" href="#clicks">Voir toutes les catégories</button></a>
+	</div>
+	
+</div>
+
+<!-- LES BLOCKS DES CHOIS -->
+<div class="container" id="clicks">
+	
+
+	
+	
+	 
+
+	
+	<div class="children" id="testi">1</div>
+	<div class="children1">2</div>
+	<div class="children2">3</div>
+	<div class="children3">4</div>
+	<div class="children4">5</div>
+	<div class="children">1</div>
+	<div class="children1">2</div>
+	<div class="children2">3</div>
+	<div class="children3">4</div>
+	<div class="children4">5</div>
+	<div class="children">1</div>
+	<div class="children1">2</div>
+	<div class="children2">3</div>
+	<div class="children3">4</div>
+	<div class="children4">5</div>
+	<div class="children">1</div>
+	<div class="children1">2</div>
+	<div class="children2">3</div>
+	<div class="children3">4</div>
+	<div class="children4">5</div>
+	<div class="children">1</div>
+	<div class="children1">2</div>
+	<div class="children2">3</div>
+	<div class="children3">4</div>
+	<div class="children4">5</div>
+	<div class="children">1</div>
+	<div class="children1">2</div>
+	<div class="children2">3</div>
+	<div class="children3">4</div>
+	<div class="children4">5</div>
+	<div class="children">1</div>
+
+</div>
+
+
+	<section id="contact">
+	<h3 id="contact_title">CONTACT</h3>	
+	<div class="textInputs">Votre Nom: <input class="lesInputs" id="input_Nom"></input></div>
+	<div class="textInputs">Votre Prenom: <input class="lesInputs" id="input_Prenom"></input> </div>
+	<div class="textInputs">Votre E-mail: <input class="lesInputs" id="input_Email"></input> </div>
+	<div class="textInputs">Votre message:</div>
+	<textarea  id="textArea" ></textarea>
+	<button id="envoyer" type="button" onclick="alert('Votre message a bien été envoyé')" >Envoyer</button>
+    </section>
+	
+<script type="text/javascript" src="js/myScript.js"></script>
+</body>
+
+</html>
