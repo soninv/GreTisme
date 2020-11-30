@@ -84,23 +84,55 @@ $('.header__logo').replaceWith("<h1>\"Au bout de chaque rue, une montagne...\" <
 
 /*Les effets sur les blocks */
 $(".children, .children1, .children2, .children3, .children4").on({
-  click: function (){  
+  click: function (){ 
+
+    $('.title_ptblocks').animate({
+      
+    });
+
     $(this).animate({
-      opacity: '0.8',
-      height: '400px',
-      width: '400px',
-    
+      opacity: '1',
+      height: '700px',
+      width: '500px',
+     fontSize: "1em",
     });
     },  
-  mouseleave: function (){  
+
+
+  mouseleave: function (){
+    $(".horaires").hide("slow");   
     $(this).animate({
-      opacity: '0.8',
+      opacity: '0.9',
       height: '300px',
       width: '300px',
-    
-    });
+      fontSize: "1em",
+    });    
   },   
 });
+
+
+
+/* LES EFFETS DANS LE  PETIT BLOCKS */
+
+ // ПРОБЛЕМА С HOIRAIRES     
+$(this).click(function(){
+  $(".horaires").show();
+});
+
+
+
+// ПРОБЛЕМА С HOIRAIRES
+
+$("span").click(function(){
+  $(".plus_info").slideToggle("slow"); 
+});
+
+
+
+
+
+
+
 
 
 /*-----TypeIt de contact------*/
@@ -108,21 +140,21 @@ $(".children, .children1, .children2, .children3, .children4").on({
 /*Input Nom */
 new TypeIt("#input_Nom", {
   strings: "Example: Doupont",
-  speed: 100,
+  speed: 50,
   waitUntilVisible: true
 }).go();
 
 /*Input Prenom */
 new TypeIt("#input_Prenom", {
   strings: "Example: Pierre",
-  speed: 200,
+  speed: 70,
   waitUntilVisible: true
 }).go();
 
 /*Input Email */
 new TypeIt("#input_Email", {
   strings: "Example: doupont.pierre@gmail.com",
-  speed: 200,
+  speed: 50,
   waitUntilVisible: true
 }).go();
 
@@ -136,7 +168,7 @@ new TypeIt("#textArea", {
     await new Promise((resolve, reject) => {
       setTimeout(() => {
         return resolve();
-      }, 3000);
+      }, 100);
     });
   })
   .type(" est agreable!")

@@ -17,7 +17,6 @@ body{
 
 
 
-
 *,
 *:before,
 *:after {
@@ -40,6 +39,7 @@ hr {
 /*Buttom voir tous les preferences*/
 #retablir{
 	margin-top: 15px;
+	margin-left: 20px;
 	width: 150px;
 	height: 60px;
 	float: left;
@@ -71,7 +71,7 @@ hr {
 
 /*CONTAINER*/
 .container{
-	width:100%;
+	width:104%;
 	max-width:1900px;
 	margin:0 auto;
 	
@@ -83,7 +83,8 @@ hr {
 	height: 300px;
 	background-color: #f38181;
 	display: inline-block;
-    vertical-align: top;
+	vertical-align: top;
+	overflow: hidden;
 
 }
 
@@ -93,7 +94,8 @@ hr {
 	height: 300px;
 	background-color: #6b650d;
 	display: inline-block;
-    vertical-align: top;
+	vertical-align: top;
+	overflow: hidden;
 
 }
 
@@ -103,7 +105,8 @@ hr {
 	height: 300px;
 	background-color: #8c2bb9;
 	display: inline-block;
-    vertical-align: top;
+	vertical-align: top;
+	overflow: hidden;
 }
 
 .children3{
@@ -112,7 +115,8 @@ hr {
 	height: 300px;
 	background-color: #e49250;
 	display: inline-block;
-    vertical-align: top;
+	vertical-align: top;
+	overflow: hidden;
 }
 .children4{
 	margin: 20px 20px;
@@ -120,7 +124,8 @@ hr {
 	height: 300px;
 	background-color: #08ee1b;
 	display: inline-block;
-    vertical-align: top;
+	vertical-align: top;
+	overflow: hidden;
 }
 
 
@@ -174,7 +179,7 @@ hr {
 		width:1500px;
 		height:3px;
 		background-color:#f38181;
-		margin:90px auto 110px auto;
+		margin:110px auto 110px auto;
 	
 }
 
@@ -219,12 +224,14 @@ hr {
 	font-family: 'Times New Roman', Times, serif;
 	font-weight:700;
 	color:#fff;
+	margin-left: 20px;
 }
 	
 /*NAV*/
 .nav{
-	font-size:14px;
+	font-size:18px;
 	text-transform:uppercase;
+	margin-right: 190px;
 }
 
 .nav__link{
@@ -418,7 +425,62 @@ opacity:1;
 
 }
 
-/*CONTACT*/
+#info_blocs{
+ text-align: center; 
+ color:rgb(92, 91, 95);
+ font-family: 'Kaushan Script';
+ font-size:30px;
+ margin-top: -50px;
+ margin-bottom: 50px;
+}
+
+/*CONTENU DES PETITS BLOCS */
+
+.title_ptblocks{
+	font-size: 23px;
+	margin-left: 10px;
+    padding: 10px 10px;
+
+}
+
+.images_ptblocks{
+	margin-left: 10px;
+
+}
+
+#description{
+	
+	overflow: hidden;
+
+}
+
+.horaires{
+	float: right;
+	/* margin: 8px 28px; */
+	margin-right: 25px;
+	margin-top: -20px;
+	display: none;
+}
+
+.plus_info{
+	display:none;
+	margin: 0px 0px;
+	padding: 0px 0px;
+}
+
+span{
+	font-weight: bold;
+
+}
+
+
+
+
+/*----------FIN------------------*/
+
+
+
+/*-----------CONTACT-----------------------*/
 #contact{
 	display: block;
 	width: 400px;
