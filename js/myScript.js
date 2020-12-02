@@ -1,9 +1,9 @@
 
-var x = document.getElementsByClassName("children");
-var x1 = document.getElementsByClassName("children1");
-var x2 = document.getElementsByClassName("children2");
-var x3 = document.getElementsByClassName("children3");
-var x4 = document.getElementsByClassName("children4");
+var x = document.getElementsByClassName("culturelle");
+var x1 = document.getElementsByClassName("randonnee");
+var x2 = document.getElementsByClassName("gastronomique");
+var x3 = document.getElementsByClassName("soiree");
+var x4 = document.getElementsByClassName("loisirs");
 
 
 	function removeElement() {
@@ -66,7 +66,7 @@ var x4 = document.getElementsByClassName("children4");
 	        $(x4[index]).css({"display":"inline-block"});
 		}
 	
-	}
+	} 
 
  
 
@@ -77,13 +77,23 @@ for (let index = 0; index < 100; index++) {
 }
 
 
+/*
+$('.menu_item').click(function(e){ 
+  e.preventDefault();
+  var blockID = $(this).data('trigger');
+  $('.menu-block').hide();
+  $('#'+blockID).show();
+
+}); */
+
+
 /*Changement de texte */
 $(".header__logo").click(function(){ 
 $('.header__logo').replaceWith("<h1>\"Au bout de chaque rue, une montagne...\" <br> -Stendhal</h1>");
 });
 
 /*Les effets sur les blocks */
-$(".children, .children1, .children2, .children3, .children4").on({
+$(".culturelle, .randonnee, .gastronomique, .soiree, .loisirs").on({
   click: function (){ 
 
     $('.title_ptblocks').animate({
@@ -92,7 +102,7 @@ $(".children, .children1, .children2, .children3, .children4").on({
 
     $(this).animate({
       opacity: '1',
-      height: '700px',
+      height: '820px',
       width: '500px',
      fontSize: "1em",
     });
@@ -103,7 +113,7 @@ $(".children, .children1, .children2, .children3, .children4").on({
     $(".horaires").hide("slow");   
     $(this).animate({
       opacity: '0.9',
-      height: '300px',
+      height: '260px',
       width: '300px',
       fontSize: "1em",
     });    
@@ -114,17 +124,27 @@ $(".children, .children1, .children2, .children3, .children4").on({
 
 /* LES EFFETS DANS LE  PETIT BLOCKS */
 
- // ПРОБЛЕМА С HOIRAIRES     
-$(this).click(function(){
-  $(".horaires").show();
+ //  HOIRAIRES     
+$('.culturelle').click(function(){
+  $(this).find('.horaires').show();
 });
+//-----fin-----
 
-
-
-// ПРОБЛЕМА С HOIRAIRES
-
+// plus d'info
 $("span").click(function(){
-  $(".plus_info").slideToggle("slow"); 
+  $(".plus_info").slideToggle("slow");
+  $("iframe").slideToggle("slow"); 
+
+});
+//---fin----------
+
+
+$('img').hover(function(){
+	var el = $(this)
+  el.data('orig', el.attr('src'))
+  el.attr('src', el.data('img2'))
+}, function(){
+  $(this).attr('src', $(this).data('orig'))
 });
 
 
@@ -135,7 +155,13 @@ $("span").click(function(){
 
 
 
-/*-----TypeIt de contact------*/
+
+
+
+
+
+
+/*--*-*-*-TypeIt de contact-*-*-*-*-*-*/
 
 /*Input Nom */
 new TypeIt("#input_Nom", {
