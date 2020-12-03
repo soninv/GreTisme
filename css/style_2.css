@@ -8,7 +8,6 @@ h1{
 body{
 	margin:0;
 	font-family: 'Montserrat', sans-serif;
-	/*min-width:1300px;*/
 	font-size:16px;
 	line-height:1.6;
 	color:#333;
@@ -74,7 +73,6 @@ hr {
 	width:104%;
 	max-width:1850px;
 	margin:0 auto;
-	/* padding-left: 5px; */
 	
 }
 #clicks{
@@ -88,7 +86,6 @@ hr {
 	margin: 20px 20px;
 	width: 300px;
 	height: 260px;
-	/* background-image: url(../images/loisirs.jpg); */
 	/* background-color:rgba(240, 116, 116, 0.3); */
 	background-color:rgba(250, 250, 250, 0.5);
 	/* background-color: #f38181; */
@@ -100,8 +97,8 @@ hr {
 .culturelle:hover {
 	/* background-color:rgba(240, 116, 116, 0.5); */
 	transform: translateY(2px);
-	/* background:linear-gradient(to bottom, #f4f4f5, #364d7c); */
 	background-color:rgba(250, 250, 250, 0.8);
+	background:linear-gradient(to bottom, #f4f4f5, #5f7fd6);
   }
 
 .randonnee{
@@ -115,6 +112,7 @@ hr {
 	overflow: hidden;
 }
 .randonnee:hover {
+	background:linear-gradient(to bottom, #f4f4f5, #5f7fd6);
 	background-color:rgba(250, 250, 250, 0.9);
 	transform: translateY(2px);
   }
@@ -132,6 +130,7 @@ hr {
 }
 .gastronomique:hover {
 	background-color:rgba(250, 250, 250, 0.9);
+	background:linear-gradient(to bottom, #f4f4f5, #5f7fd6);
 	transform: translateY(2px);
   }
 
@@ -148,6 +147,7 @@ hr {
 }
 .soiree:hover {
 	background-color:rgba(250, 250, 250, 0.9);
+	background:linear-gradient(to bottom, #f4f4f5, #5f7fd6);
 	transform: translateY(2px);
   }
 
@@ -164,6 +164,7 @@ hr {
 }
 .loisirs:hover {
 	background-color:rgba(250, 250, 250, 0.9);
+	background:linear-gradient(to bottom, #f4f4f5, #5f7fd6);
 	transform: translateY(2px);
   }
 
