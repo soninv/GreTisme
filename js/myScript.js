@@ -110,8 +110,8 @@ $(".culturelle, .randonnee, .gastronomique, .soiree, .loisirs").on({
 
 
   mouseleave: function (){
-    $(".horaires").hide("slow");   
-    $(".randonnee_precision").hide("slow");  
+    $(".horaires").hide("fast");   
+    $(".randonnee_precision").hide("fast");  
     $(this).animate({
       opacity: '0.9',
       height: '260px',
