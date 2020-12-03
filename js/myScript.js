@@ -88,7 +88,7 @@ $('.menu_item').click(function(e){
 
 
 /*Changement de texte */
-$(".header__logo").click(function(){ 
+$(".header__logo").mouseenter(function(){ 
 $('.header__logo').replaceWith("<h1>\"Au bout de chaque rue, une montagne...\" <br> -Stendhal</h1>");
 });
 
@@ -111,6 +111,7 @@ $(".culturelle, .randonnee, .gastronomique, .soiree, .loisirs").on({
 
   mouseleave: function (){
     $(".horaires").hide("slow");   
+    $(".randonnee_precision").hide("slow");  
     $(this).animate({
       opacity: '0.9',
       height: '260px',
@@ -125,19 +126,32 @@ $(".culturelle, .randonnee, .gastronomique, .soiree, .loisirs").on({
 /* LES EFFETS DANS LE  PETIT BLOCKS */
 
  //  HOIRAIRES     
-$('.culturelle').click(function(){
+$(".culturelle, .randonnee, .gastronomique, .soiree, .loisirs").click(function(){
   $(this).find('.horaires').show();
 });
 //-----fin-----
 
+//---les icones de randonnes---
+$(".culturelle, .randonnee, .gastronomique, .soiree, .loisirs").click(function(){
+  $(this).find('.randonnee_precision').show();
+});
+//-----fin--------
+
+
 // plus d'info
 $("span").click(function(){
-  $(".plus_info").slideToggle("slow");
-  $("iframe").slideToggle("slow"); 
-
+  $(".plus_info").slideToggle("fast");
+  $("iframe").slideToggle("fast"); 
 });
 //---fin----------
 
+
+// randonnee plus d'info
+$(".randonnee_plus").click(function(){
+  $(".plus_info").slideToggle("fast");
+  $(".acces").slideToggle("fast"); 
+});
+//-----fin--------
 
 $('img').hover(function(){
 	var el = $(this)

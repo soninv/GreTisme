@@ -71,11 +71,10 @@ hr {
 
 /*CONTAINER*/
 .container{
-	
-	width:105%;
-	max-width:1900px;
+	width:104%;
+	max-width:1850px;
 	margin:0 auto;
-	padding-left: 5px;
+	/* padding-left: 5px; */
 	
 }
 #clicks{
@@ -173,11 +172,11 @@ hr {
 
 /*INTRO*/
 .intro{
-	width:100%;
-	height:100vh;
-	
-	
 	background:url(../images/intro.jpg) center no-repeat;
+	height:100vh;
+	width:104%;
+	max-width:1850px;
+	background-attachment: fixed;
 	background-size:cover;
 	display:flex;
 	flex-direction:column;
@@ -474,11 +473,14 @@ opacity:1;
  margin-bottom: 50px;
 }
 
+
 /*CONTENU DES PETITS BLOCS */
 
 .title_ptblocks{
-	color: rgb(0, 0, 0);
+	color: rgb(10, 3, 70);
 	font-size: 23px;
+	text-align: center;
+	position: initial;
 	margin-left: 10px;
     padding: 10px 10px;
 
@@ -488,7 +490,9 @@ opacity:1;
 }
 
 .images_ptblocks{
-	margin-left: 20px;
+	margin-left: 25px;
+	text-align: center;
+	
 
 }
 
@@ -534,9 +538,24 @@ span{
 }
 
 
+.randonnee_precision{
+	width: 50px;
+	height: 50px;
+	float: right;
+	margin: 0px 12px;
+	display: none;
+}
+#dificulte{
+	padding-right: 25px;
+	margin-left: -20px 
+}
 
-
-
+.randonnee_plus{
+	padding: 0px 0px;
+	margin: 0px 0px;
+  text-align: left;
+  font-weight: bold;
+}
 
 
 /*----------FIN------------------*/
