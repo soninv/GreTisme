@@ -161,20 +161,6 @@ $('img').hover(function(){
   $(this).attr('src', $(this).data('orig'))
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*--*-*-*-TypeIt de contact-*-*-*-*-*-*/
 
 /*Input Nom */
@@ -216,15 +202,6 @@ new TypeIt("#textArea", {
   .delete(9)
   .type("tres agreable!")
   .go();
-
-
-
-
-
-
-
-
-
 
 
   
